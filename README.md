@@ -18,11 +18,11 @@
     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
     sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-    <h3> Signup for Newsletter</h3>
+    <h3> Sign up for Newsletter</h3>
     <address> Vistor Contact Information </address>
     Newsletter will be available biweekly for your view pleasure.
 
-<h4>footer> website information</h4>
+<h4><footer> website information</h4>
     
     </body>
 </html>
