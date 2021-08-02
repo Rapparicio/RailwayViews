@@ -133,9 +133,71 @@ h1 {
     - MARC
                                                                                                
     - WMATA
-            
+      
+ ## Railfran Survey
+    
+    Let us know what train locations are you favorites! You can pick more than one!
+  
+<form name="selectForm">
+  
+  <p>
+    
+    <label for="trainTypes">Choose some train locations, then click the button below:</label>
+    
+    <select id="trainLocations" name="trainlocations" multiple="multiple">
+      
+      <option selected="selected">WashDC</option>
+      
+      <option>Balt</option>
+      
+      <option>AlexVA</option>
+      
+      <option>NYPen</option>
+      
+      <option>NewarkNJ</option>
+      
+      <option>SilverSp</option>
+      
+    </select>
+    
+  </p>
+  
+  <p><input id="btn" type="button" value="How many are selected?" /></p>
+  
+</form>
+
+    
+    
+<script>
+  
+function howMany(selectObject) {
+  
+  let numberSelected = 0;
+  
+  for (let i = 0; i < selectObject.options.length; i++) {
+    
+    if (selectObject.options[i].selected) {
+      
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+let btn = document.getElementById('btn');
+  
+btn.addEventListener('click', function() {
+  
+  alert('Number of options selected: ' + howMany(document.selectForm.trainLocations));
+  
+});
+  
+</script>
+
+    
     
  <style>
+   
 body {font-family: Arial, Helvetica, sans-serif;}
 
 form {
